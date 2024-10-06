@@ -1,0 +1,16 @@
+ion-content {
+  --background: none; /* Elimina el fondo predeterminado de Ionic */
+  background: linear-gradient(180deg, #ffffff, #0043c0); /* Degradado de coral a azul */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  height: 100%; /* Asegura que el contenedor ocupe toda la pantalla */
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  width: 100%;
+}

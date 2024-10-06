@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+  margin-top: 35%; /* Ajusta el margen según necesites */
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px; /* Espacio entre el título y los botones */
+  gap: 40px; /* Espacio entre los botones */
+}
+
+ion-content {
+  --background: none; /* Elimina el fondo predeterminado de Ionic */
+  background: linear-gradient(180deg, #ffffff, #0043c0); /* Degradado de coral a azul */
+}

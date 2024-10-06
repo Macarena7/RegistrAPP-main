@@ -1,0 +1,53 @@
+<ion-content>
+  <app-header></app-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Asignatura 1</ion-label>
+      @if (usuario === 'profesor'){
+      <ion-button [routerLink]="['/generador']">Generar QR</ion-button>
+      }
+      @if (usuario === 'alumno'){
+      <ion-button [routerLink]="['/scanner']">Escanear QR</ion-button>
+      }
+    </ion-item>
+    <ion-item>
+      <ion-label>Asignatura 2</ion-label>
+      @if (usuario === 'profesor'){
+      <ion-button [routerLink]="['/generador']">Generar QR</ion-button>
+      }
+      @if (usuario === 'alumno'){
+      <ion-button [routerLink]="['/scanner']">Escanear QR</ion-button>
+      }
+    </ion-item>
+    <ion-item>
+      <ion-label>Asignatura 3</ion-label>
+      @if (usuario === 'profesor'){
+      <ion-button [routerLink]="['/generador']" >Generar QR</ion-button>
+      }
+      @if (usuario === 'alumno'){
+      <ion-button [routerLink]="['/scanner']">Escanear QR</ion-button>
+      }
+    </ion-item>
+    <ion-item>
+      <ion-label>Asignatura 4</ion-label>
+      @if (usuario === 'profesor'){
+      <ion-button [routerLink]="['/generador']">Generar QR</ion-button>
+      }
+      @if (usuario === 'alumno'){
+      <ion-button [routerLink]="['/scanner']">Escanear QR</ion-button>
+      }
+    </ion-item>
+    <ion-item>
+      <ion-label>Asignatura 5</ion-label>
+      @if (usuario === 'profesor'){
+      <ion-button [routerLink]="['/generador']">Generar QR</ion-button>
+      }
+      @if (usuario === 'alumno'){
+      <ion-button [routerLink]="['/scanner']">Escanear QR</ion-button>
+      }
+    </ion-item>
+  </ion-list>
+
+  <app-footer></app-footer>
+</ion-content>

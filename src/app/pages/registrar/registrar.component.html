@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <app-header></app-header>
+  <br><br>
+  <form class="form">
+    <p id="heading">Register</p>
+    <div class="field">
+      <ion-input [(ngModel)]="username" name="username" autocomplete="off" placeholder="Username" class="input-field" type="text"></ion-input>
+    </div>
+    <div class="field">
+      <ion-input [(ngModel)]="password" name="password" placeholder="Password" class="input-field" type="password"></ion-input>
+    </div>
+    <div class="field">
+      <ion-input [(ngModel)]="phone" name="phone" placeholder="Phone Number" class="input-field" type="text"></ion-input>
+    </div>
+    <div class="btn">
+      <button (click)="register(username, password, phone)" class="button1">Register</button>
+    </div>
+    <ion-text color="success" *ngIf="registrationSuccess">
+      Registration successful!
+    </ion-text>
+    <ion-text color="danger" *ngIf="registrationFailed">
+      Registration failed. Please try again.
+    </ion-text>
+  </form>
+</ion-content>
